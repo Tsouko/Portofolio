@@ -1,1 +1,147 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col font-sans">
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-duration="800" data-aos-delay="100"
+        class="lg:px-16 px-6 bg-white/80 backdrop-blur-md fixed top-0 w-full z-50 flex items-center py-4 shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
+                class="text-2xl font-bold text-blue-600 tracking-wide">TechVerse</a>
+        </div>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <nav class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <ul class="md:flex items-center justify-between text-base font-medium text-gray-700 pt-4 md:pt-0">
+                <li><a href="landing-page.html" data-aos="fade-down" data-aos-duration="800" data-aos-delay="300"
+                        class="md:p-4 py-3 px-0 block text-blue-600 font-semibold">Home</a></li>
+                <li><a href="product-page.html" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400"
+                        class="md:p-4 py-3 px-0 block hover:text-blue-600 transition">Product</a></li>
+                <li><a href="contact-page.html" data-aos="fade-down" data-aos-duration="800" data-aos-delay="500"
+                        class="md:p-4 py-3 px-0 block hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow pt-40">
+
+        <!-- Hero Section -->
+        <section class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-6xl lg:mt-16 xl:max-w-7xl pb-20">
+
+            <!-- Hero Image -->
+            <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500" class="w-full h-72 lg:w-1/2 lg:h-auto relative">
+                <img class="h-full w-full object-cover rounded-lg shadow-xl" src="assets/images/hero-pc.jpg" alt="Hero Pc">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent rounded-lg"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"
+                class="max-w-lg bg-white/90 backdrop-blur-md md:max-w-2xl md:z-10 md:shadow-2xl md:absolute md:top-0 md:mt-52 lg:w-3/5 lg:left-0 lg:mt-24 lg:ml-20 xl:mt-28 xl:ml-12 rounded-2xl">
+                <div class="flex flex-col p-10 md:px-14">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
+                        class="text-3xl font-bold uppercase text-gray-800 lg:text-5xl">TechVerse</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="mt-4 text-gray-600 leading-relaxed">
+                        Discover cutting-edge technology that blends performance, style, and reliability.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Product Cards -->
+        <section id="products" class="w-full bg-gray-100 py-45">
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" class="max-w-6xl mx-auto px-6">
+                <h3 class="text-3xl font-bold text-gray-800 mb-12 text-center">Our Products</h3>
+
+                <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+
+                    <!-- Card 1 -->
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"
+                        class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform w-full max-w-sm">
+                        <img class="w-full h-52 object-cover" src="assets/images/Laptop-1.jpg" alt="Product">
+                        <div class="p-6">
+                            <h5 class="text-xl font-semibold text-gray-800">Gaming Laptop</h5>
+                            <p class="mt-2 text-gray-600 text-sm">High performance for gaming & work.</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-lg font-bold text-blue-600">Rp 15.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"
+                        class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform w-full max-w-sm">
+                        <img class="w-full h-52 object-cover" src="assets/images/Laptop-1.jpg" alt="Product">
+                        <div class="p-6">
+                            <h5 class="text-xl font-semibold text-gray-800">Mechanical Keyboard</h5>
+                            <p class="mt-2 text-gray-600 text-sm">RGB lights and fast switches.</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-lg font-bold text-blue-600">Rp 1.200.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"
+                        class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform w-full max-w-sm">
+                        <img class="w-full h-52 object-cover" src="assets/images/hero-pc.jpg" alt="Product">
+                        <div class="p-6">
+                            <h5 class="text-xl font-semibold text-gray-800">Gaming Mouse</h5>
+                            <p class="mt-2 text-gray-600 text-sm">Ergonomic with high DPI sensor.</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-lg font-bold text-blue-600">Rp 800.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Button See More -->
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" class="text-center mt-16">
+                    <a href="product-page.html"
+                        class="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300">
+                        See More
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 shadow-inner">
+        <div class="w-full max-w-screen-xl mx-auto p-6 md:py-10">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">TechVerse</span>
+                <ul class="flex flex-wrap items-center mt-4 sm:mt-0 text-sm font-medium text-gray-600">
+                    <li><a href="#" class="hover:text-blue-600 me-4 md:me-6">About</a></li>
+                    <li><a href="contact-page.html" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center">
+                © 2025 <a href="#" class="hover:underline text-blue-600">TechVerse</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
